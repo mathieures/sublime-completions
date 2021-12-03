@@ -1,0 +1,27 @@
+{
+    "scope": "source.powershell",
+    "completions":
+    [
+        "Write-Host",
+        "Out-Host",
+        "ForEach-Object",
+        {
+            "trigger": "for+",
+            "contents": "for (\\$${1:i} = ${2:0}; \\$${1:i} -lt ${3:10}; \\$${1:i}++) {\n\t${4:# Do stuff}\n}",
+            "annotation": "For loop",
+            "kind": ["snippet", "s", "For loop"]
+        },
+        {
+            "trigger": "for-",
+            "contents": "for (\\$${1:i} = ${2:10}; \\$${1:i} -gt ${3:0}; \\$${1:i}--) {\n\t${4:# Do stuff}\n}",
+            "annotation": "Decreasing For Loop",
+            "kind": ["snippet", "s", "Decreasing For Loop"]
+        },
+        {
+            "trigger": "List",
+            "contents": "[System.Collections.Generic.List[${1:int}]]::New(${2})",
+            "annotation": "New list",
+            "kind": ["snippet", "s", "New List"]
+        }
+    ]
+}

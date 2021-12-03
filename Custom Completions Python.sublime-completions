@@ -1,0 +1,24 @@
+{
+    "scope": "source.python",
+    "completions":
+    [
+        {
+            "trigger": "ifnone",
+            "contents": "if ${1} is${2: not} None:\n\t${3:pass}$0",
+            "annotation": "Check if a variable is None",
+            "kind": ["snippet", "s", "if … is [not] None"]
+        },
+        {
+            "trigger": "swap",
+            "contents": "${1}, ${2} = ${2}, ${1}",
+            "annotation": "Swap two variables",
+            "kind": ["snippet", "s", "x, y = y, x"]
+        },
+        {
+            "trigger": "printf",
+            "contents": "print(f\"${1}\")",
+            "annotation": "Print an f-string",
+            "kind": ["snippet", "s", "print(f\"...\")"]
+        }
+    ]
+}
