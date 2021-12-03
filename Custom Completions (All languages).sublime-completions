@@ -1,0 +1,12 @@
+{
+    "scope": "source",
+    "completions":
+    [
+        {
+            "trigger": "TODO",
+            "contents": "${TM_FILENAME/(.*\\.)(py|ps1)|(.*)/(?2#:\\/\\/)(?3:)/} TODO : ${1:choses à faire la prochaine fois}",
+            "annotation": "Choses à faire la prochaine fois",
+            "kind": ["snippet", "s", "TODO"]
+        }
+    ]
+}
