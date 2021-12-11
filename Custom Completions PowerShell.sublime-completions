@@ -3,8 +3,11 @@
     "completions":
     [
         "Write-Host",
+        "Write-Output",
+        "Select-Object",
         "Out-Host",
         "ForEach-Object",
+        "foreach",
         {
             "trigger": "for+",
             "contents": "for (\\$${1:i} = ${2:0}; \\$${1:i} -lt ${3:10}; \\$${1:i}++) {\n\t${4:# Do stuff}\n}",
