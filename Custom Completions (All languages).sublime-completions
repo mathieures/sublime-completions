@@ -4,13 +4,13 @@
     [
         {
             "trigger": "TODO",
-            "contents": "${TM_FILENAME/(.*\\.)(py|ps1|sh)|(.*)/(?2#:\\/\\/)(?3:)/} TODO: ${1:things to do next time}",
+            "contents": "${TM_FILENAME/(.*\\.)(py|ps1|sh)|(.*)/(?2#:\\/\\/)(?3:)/} TODO - ${1:things to do next time}",
             "annotation": "Things to do next time",
             "kind": ["snippet", "s", "TODO"]
         },
         {
             "trigger": "TODOM",
-            "contents": "${TM_FILENAME/(.*\\.)(py)|(.*)/(?2\"\"\":\\/*)(?3:)/}\nTODO: ${1:things to do next time}\n${TM_FILENAME/(.*\\.)(py)|(.*)/(?2\"\"\"\n:*\\/)(?3:)/}",
+            "contents": "${TM_FILENAME/(.*\\.)(py)|(.*)/(?2\"\"\":\\/*)(?3:)/}\nTODO - ${1:things to do next time}\n${TM_FILENAME/(.*\\.)(py)|(.*)/(?2\"\"\"\n:*\\/)(?3:)/}",
             "annotation": "Things to do next time, multi-line",
             "kind": ["snippet", "s", "TODOM"]
         }
