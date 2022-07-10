@@ -19,6 +19,12 @@
             "contents": "print(f\"${1}\")",
             "annotation": "Print an f-string",
             "kind": ["snippet", "s", "print(f\"...\")"]
+        },
+        {
+            "trigger": "main",
+            "contents": "def main():\n\t\"\"\"Main function\"\"\"\n\t${0:return}\n\n\nif __name__ == '__main__':\n\tmain()",
+            "annotation": "Write a main and a main if",
+            "kind": ["snippet", "s", "def main()...ifmain"]
         }
     ]
 }
