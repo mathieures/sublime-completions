@@ -25,6 +25,12 @@
             "contents": "def main():\n\t\"\"\"Main function\"\"\"\n\t${0:return}\n\n\nif __name__ == '__main__':\n\tmain()",
             "annotation": "Write a main and a main if",
             "kind": ["snippet", "s", "def main()...ifmain"]
+        },
+        {
+            "trigger": "except",
+            "contents": "except ${1:Exception}${2: as exc}:\n\t",
+            "annotation": "Handle exception",
+            "kind": ["snippet", "s", "except Exception"]
         }
     ]
 }
