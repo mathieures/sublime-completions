@@ -1,0 +1,12 @@
+{
+    "scope": "source.shell",
+    "completions":
+    [
+        {
+            "trigger": "devnull",
+            "contents": ">/dev/null",
+            "annotation": "Pipe to /dev/null",
+            "kind": ["snippet", "s", ">/dev/null"]
+        }
+    ]
+}
