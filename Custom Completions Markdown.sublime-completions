@@ -3,7 +3,7 @@
     "completions":
     [
         {
-            "trigger": "checkbox",
+            "trigger": "cb",
             "contents": "- [ ] $0",
             "annotation": "Add a checkbox",
             "kind": ["snippet", "s", "- [ ] ..."]
