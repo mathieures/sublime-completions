@@ -1,0 +1,12 @@
+{
+    "scope": "source.rust",
+    "completions":
+    [
+        {
+            "trigger": "vec!",
+            "contents": "vec![${1}];",
+            "annotation": "Vector macro",
+            "kind": ["snippet", "s", "vec![…]"]
+        }
+    ]
+}
