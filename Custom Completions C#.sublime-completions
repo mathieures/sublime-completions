@@ -1,0 +1,54 @@
+{
+    "scope": "source.cs",
+    "completions":
+    [
+        {
+            "trigger": "for",
+            "contents": "for (${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:10}; ${2:i}++)\n{\n\t${5:// Do stuff}\n}",
+            "annotation": "For loop",
+            "kind": ["snippet", "s", "For loop"]
+        },
+        {
+            "trigger": "for-",
+            "contents": "for (${1:int} ${2:i} = ${3:10}; ${2:i} > ${4:0}; ${2:i}--)\n{\n\t${5:// Do stuff}\n}",
+            "annotation": "Decreasing For Loop",
+            "kind": ["snippet", "s", "Decreasing For Loop"]
+        },
+        {
+            "trigger": "for+i",
+            "contents": "for (${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:10}; ${2:i}++) { ${5:/* Do stuff */} }",
+            "annotation": "Inline For loop",
+            "kind": ["snippet", "s", "Inline For loop"]
+        },
+        {
+            "trigger": "for-i",
+            "contents": "for (${1:int} ${2:i} = ${3:10}; ${2:i} > ${4:0}; ${2:i}--) { ${5:/* Do stuff */} }",
+            "annotation": "Inline Decreasing For Loop",
+            "kind": ["snippet", "s", "Inline Decreasing For Loop"]
+        },
+        {
+            "trigger": "while",
+            "contents": "while (${1:condition} ${2:==} ${3:true})\n{\n\t${4:// Do stuff}\n}",
+            "annotation": "While loop",
+            "kind": ["snippet", "s", "While loop"]
+        },
+        {
+            "trigger": "List",
+            "contents": "List<${1:int}>(${2})",
+            "annotation": "New list",
+            "kind": ["snippet", "s", "New List"]
+        },
+        {
+            "trigger": "foreach",
+            "contents": "foreach (${1:var} ${2:el} in ${3:collection})\n{\n\t${4:// Do stuff}\n}",
+            "annotation": "ForEach loop",
+            "kind": ["snippet", "s", "ForEach loop"]
+        },
+        {
+            "trigger": "wl",
+            "contents": "Console.WriteLine(${0});",
+            "annotation": "Console.WriteLine(...)",
+            "kind": ["snippet", "s", "Console.WriteLine(...)"]
+        },
+    ]
+}

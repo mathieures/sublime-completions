@@ -1,0 +1,72 @@
+{
+    "scope": "text.html.markdown",
+    "completions":
+    [
+        {
+            "trigger": "cb",
+            "contents": "- [ ] $0",
+            "annotation": "Add a checkbox",
+            "kind": ["snippet", "s", "- [ ] ..."]
+        },
+        {
+            "trigger": "cc",
+            "contents": "`$1`$0",
+            "annotation": "Add an inline code element",
+            "kind": ["snippet", "s", "`...`"]
+        },
+        {
+            "trigger": "code",
+            "contents": "```${1:python}\n$2\n```",
+            "annotation": "Add a code element",
+            "kind": ["snippet", "s", "```...```"]
+        },
+        {
+            "trigger": "img",
+            "contents": "![${1:Alt text}](${2:/path/to/image}${4: \"${1:Hover text}\"})",
+            "annotation": "Add an image",
+            "kind": ["snippet", "s", "![Alt text](image)"]
+        },
+        {
+            // Link to header (paste/write, tab, then delete)
+            "trigger": "linkheader",
+            "contents": "${2:$1 | }${1/( )|(\\()|(\\))|([A-Z])|(')|(é|è|ê)|(à)/(?1-:)(?2:)(?3:)(?4\\l$4:)(?5:)(?6e:)(?7:a)/g}",
+            "annotation": "Link header",
+            "kind": ["snippet", "s", "#link-header"]
+        },
+        {
+            // A 3x2 table
+            "trigger": "tab",
+            "contents": "| $1 | $2 | $3 |\n|-${1/./-/g}-|-${2/./-/g}-|-${3/./-/g}-|\n| $4 | $5 | $6 |",
+            "annotation": "Table (3x2)",
+            "kind": ["snippet", "s", "|---|---|"]
+        },
+        {
+            // A 2x2 table
+            "trigger": "tab2",
+            "contents": "| $1 | $2 |\n|-${1/./-/g}-|-${2/./-/g}-|\n| $4 | $5 |",
+            "annotation": "Table (2x2)",
+            "kind": ["snippet", "s", "|---|---|"]
+        },
+        {
+            // A 2x3 table
+            "trigger": "tab23",
+            "contents": "| $1 | $2 |\n|-${1/./-/g}-|-${2/./-/g}-|\n| $4 | $5 |\n| $6 | $7 |",
+            "annotation": "Table (2x3)",
+            "kind": ["snippet", "s", "|---|---|"]
+        },
+        {
+            // A 4x2 table
+            "trigger": "tab4",
+            "contents": "| $1 | $2 | $3 | $4 |\n|-${1/./-/g}-|-${2/./-/g}-|-${3/./-/g}-|-${4/./-/g}-|\n| $5 | $6 | $7 | $8 |",
+            "annotation": "Table (4x2)",
+            "kind": ["snippet", "s", "|---|---|---|---|"]
+        },
+        {
+            // A 4x3 table
+            "trigger": "tab43",
+            "contents": "| $1 | $2 | $3 | $4 |\n|-${1/./-/g}-|-${2/./-/g}-|-${3/./-/g}-|-${4/./-/g}-|\n| $5 | $6 | $7 | $8 |\n| $9 | ${10} | ${11} | ${12} |",
+            "annotation": "Table (4x2)",
+            "kind": ["snippet", "s", "|---|---|---|---|"]
+        },
+    ]
+}
